@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>기존 PHP 기반 B2B 폐쇄몰 복제 구축 및 추가 기능 개발 (위시켓 159251)</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="위시켓 159251 — 기존 PHP 기반 B2B 폐쇄몰 복제 구축 및 추가 기능 개발 제안 요약.">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/main.css">
+</head>
+<body>
+<a class="skip" href="#facts">본문 바로가기</a>
+
+<header class="top">
+  <div class="wrap top-in">
+    <span class="mark"><i aria-hidden="true"></i>위시켓 159251 · 2026-10-26</span>
+    <button type="button" class="top-cta" id="topCta" data-demo aria-haspopup="dialog" aria-controls="demoDlg" aria-hidden="true" tabindex="-1">사전 분석 안내 <svg class="s" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <h1 class="rv">기존 PHP 기반 B2B 폐쇄몰<br><em>복제 구축 및 추가 기능 개발</em></h1>
+      <p class="greet rv"><span class="hi">안녕하십니까.</span> 안정적으로 운영 중인 귀사의 B2B 폐쇄몰을 독립된 새 환경에 정확히 복제하고<br class="bk"> 출고 사진 기능을 더해, 착수 40일차 운영 오픈을 목표로 진행하겠습니다.<br class="bk"> 첫 주에 구조와 범위를 확인하고, 매주 실제 화면을 공유하며<br class="bk"> 단계별로 진행 상황을 확인받아 일정을 지키겠습니다.</p>
+      <div class="facts" id="facts"><div class="fact rv"><span class="fl">금액</span><b class="fv">12,000,000<small>원</small></b><span class="fs"><span class="ln">권장안 · 부가세 포함 13,200,000원</span><span class="ln">기본안 10,000,000원</span></span></div><div class="fact rv"><span class="fl">기간</span><b class="fv">49<small>일</small></b><span class="fs"><span class="ln">착수일부터 · 운영 오픈 40일차</span><span class="ln">2026-11-09 착수 예시</span></span></div><div class="fact rv"><span class="fl">투입</span><b class="fv">48<small>MD</small></b><span class="fs"><span class="ln">1.60 MM · 6명</span><span class="ln">전원 보유 인력 · 재하도급 없음</span></span></div><div class="fact rv"><span class="fl">선정 전 분석</span><b class="fv">2<small>영업일</small></b><span class="fs"><span class="ln">자료 열람 가능일부터</span><span class="ln">사전 분석 메모 제출</span></span></div></div>
+    </div>
+  </section>
+
+  <section class="launch" aria-labelledby="launchTitle">
+    <div class="wrap">
+      <div class="pcard rv">
+        <div class="pshot" aria-hidden="true">
+          <img src="assets/cover-source.svg" alt="" width="1024" height="420" decoding="async">
+          <span class="plbl"><i class="st"></i>SOURCE REVIEW</span>
+        </div>
+        <div class="pbody">
+          <h2 id="launchTitle">선정 전 소스 분석</h2>
+          <p>비밀유지 서약 후 소스를 분석하고, 자료 열람 가능일부터 2영업일 안에 사전 분석 메모를 드립니다.</p>
+          <button type="button" class="pbtn" id="protoBtn" data-demo aria-haspopup="dialog" aria-controls="demoDlg">사전 분석 안내 <svg class="s" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h1s">
+    <div class="wrap">
+      <div class="sh rv"><span class="kk">1</span><h2 id="h1s">프로젝트 이해</h2></div>
+      <div class="understand rv"><p class="big"><b>이번 과업의 핵심은 「기존 몰과 완전히 분리된 새 몰을 2개월 안에 오픈하고, 회원 승인부터 주문·결제까지 안정적으로 운영하는 것」입니다.</b> 검증된 회원 승인·장바구니·주문·결제 흐름은 그대로 살리고, 코드 곳곳의 도메인·상호·경로·API 키·결제 설정·발신 정보를 신규 몰에 맞게 빠짐없이 분리하겠습니다. 여기에 구매자가 마이페이지에서 실제 출고 패킹 사진을 확인하는 기능을 더해, 새 제품군의 고객에게도 신뢰를 주는 몰로 완성하겠습니다.</p></div>
+    </div>
+  </section>
+
+  <section class="sec fold" aria-label="상세 내용">
+    <div class="wrap">
+      <p class="fold-hint rv">아래 항목은 필요하실 때 눌러서 펼쳐 보실 수 있습니다.</p>
+      <details class="acc rv" id="dh2s"><summary><span class="kk">2</span><h2 id="h2s">핵심 수행 방안</h2><span class="tog"><span class="t-open">펼쳐 보기</span><span class="t-close">접기</span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="acc-b"><ol class="ways"><li class="rv"><span class="no">01</span><h3>첫 주 분석과 범위 확정</h3><p>선정 전 사전 분석 메모로 PHP 버전·호환성·결제·문자 모듈 구조를 먼저 확인합니다. 착수 5일차(G1)에 <b>하드코딩 변경 목록·데이터 초기화 목록·연동 구조</b>를 문서로 확정하고, 이후 매주 금요일 실제 화면으로 진행 상황을 공유합니다.</p></li><li class="rv"><span class="no">02</span><h3>기존 몰과의 완전한 분리와 결제 검증</h3><p>서버·DB·접근 계정, 도메인·세션, PG 상점아이디·키·응답 주소, 문자·알림톡 설정, 파일 경로, 예약 작업, 메일 발신을 <b>분리 점검표</b>로 확인합니다. 복제본은 첫 실행 전에 기존 운영 DB·파일·결제·알림 호출을 차단하고, 흩어진 설정값은 한 곳으로 모아 다음 몰 확장도 쉽게 합니다. 결제는 테스트 MID로 먼저 연동하고, <b>실 MID 소액 결제·부분/전체 취소를 확인한 뒤 오픈</b>합니다.</p></li><li class="rv"><span class="no">03</span><h3>가볍고 안전한 출고 사진</h3><p><b>기본안도 PC·모바일 촬영·업로드를 지원</b>하며, PC는 파일 선택, 스마트폰은 촬영 또는 사진 선택으로 주문당 기본 최대 5장을 등록합니다. 브라우저에서 처리 가능한 사진은 먼저 축소하고, 서버에서 실제 형식·용량·해상도·장수를 검증해 재압축합니다. 회전 정보를 바로잡고 촬영 위치 등 메타정보를 지우며, 실제 기기의 사진 샘플로 확인해 G1에서 지원 형식과 입력 제한을 확정합니다. 구매자는 <b>마이페이지 구매 목록에서 주문별 출고 사진과 배송 현황(택배사·송장 조회)을 함께 확인</b>할 수 있습니다. 사진은 공개 주소로 노출하지 않고 <b>주문한 회원과 허용된 관리자만</b> 볼 수 있으며, 기존 주문 테이블을 바꾸지 않고 <b>주문번호로 연결되는 새 테이블</b>에 저장합니다.</p></li></ol></div></details>
+      <details class="acc rv" id="dh3s"><summary><span class="kk">3</span><h2 id="h3s">관련 경험과 적용 방안</h2><span class="tog"><span class="t-open">펼쳐 보기</span><span class="t-close">접기</span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="acc-b"><div class="rv"><div class="tw"><table class="exp"><thead><tr><th scope="col">실적</th><th scope="col">이번 과업에 적용할 부분</th></tr></thead><tbody><tr><th scope="row"><b>★ [프로토타입] B2B 주문·견적 포털</b> (자체 제작 제안용 웹 프로토타입, 가상 데이터) — 회원 승인, 승인 대기·반려 계정의 조회 제한, 장바구니·주문·배송 조회, 관리자 주문 관리</th><td>회원 승인 → 장바구니 → 주문 → 출고 흐름을 <b>복제 몰의 검증 시나리오</b>로 쓰고, 출고 사진을 구매자의 주문·배송 조회 화면에 자연스럽게 연결하겠습니다</td></tr><tr><th scope="row"><b>★ 쿠폰 발급·교환 시스템</b> — <b>PHP·CodeIgniter·MariaDB</b> 기반 등록·검증·관리자 기능의 개발과 장기 운영, 요청·승인 상태 관리와 이력의 Excel 출력</th><td>PHP 서비스의 확장·운영 경험으로 설정·라우팅·DB 접근·결제 모듈의 위치를 빠르게 파악해 <b>첫 주에 변경 목록</b>을 만들고, 관리자 승인·이력 관리 방식을 출고 사진 관리 화면에 활용하겠습니다</td></tr><tr><th scope="row"><b>인앱·PG 통합 빌링 시스템</b> (2017.07 ~ 2026.07, 참여율 100%) — <b>2024년부터 PG 직접 결제 연동</b>, 거래 번호 기반 중복 차단, 결제·취소·환불 통합 관리</th><td>결제 금액을 서버에서 다시 확인하고 취소·환불이 주문 상태와 어긋나지 않는지 점검해, 신규 MID의 일반결제·간편결제를 안정적으로 연결하겠습니다</td></tr><tr><th scope="row"><b>트래블 룰 솔루션</b> (2021.09 ~ 2022.01) — 발주사의 기존 코드를 이관받아 <b>약 넉 달 만에 상용 배포</b></th><td>다른 팀이 만든 코드를 파악하고 변경을 정리해 상용 배포까지 이어 간 경험을 초기 분석과 오픈 검증에 활용하겠습니다</td></tr></tbody></table></div><p class="memo first"><b>PHP 서비스 운영, PG 직접 결제 연동, 기존 코드 인수 후 상용 배포 경험을 결합하고, 프로토타입에서 구체화한 폐쇄몰 흐름으로 검증 시나리오를 세우겠습니다.</b> 동일 조건의 PHP 폐쇄몰 복제·출고 사진 커스터마이징 납품 실적은 현재 자료에서 확인되지 않습니다. 이번 과업에서는 첫 주의 구조 분석과 회귀 시험, 실결제·출고 사진 검증 결과로 구현 상태를 직접 확인하실 수 있게 하겠습니다.</p></div></div></details>
+      <details class="acc rv" id="dh4s"><summary><span class="kk">4</span><h2 id="h4s">수행 조건</h2><span class="tog"><span class="t-open">펼쳐 보기</span><span class="t-close">접기</span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="acc-b"><dl class="dl"><div class="rv"><dt>기간</dt><dd>착수일부터 49일(영업일 34일), <b>운영 오픈 40일차</b>. 오픈 후 9일을 안정화·검수 구간으로 포함하며, 공고 예상 기간 60일보다 오픈이 20일 앞섭니다.</dd></div><div class="rv"><dt>금액</dt><dd>권장안 12,000,000원(48 MD) · 기본안 10,000,000원(40 MD), 250,000원/MD 기준으로 산정했습니다. 두 안의 일정은 같습니다.</dd></div><div class="rv"><dt>인력</dt><dd>PM(대표이사) 2 MD · 기획 책임 6 MD · 디자인 책임 2 MD · 프론트엔드 책임 9 MD · 백엔드 수석 13 MD · 백엔드 차석 16 MD. 분석·개발 구간에 백엔드 2명을 집중 배치하고, 기획이 QA를, 백엔드 수석이 서버·DB 관리를 겸임합니다.</dd></div><div class="rv"><dt>포함 범위</dt><dd>공고의 필수 과업 전체: 소스·DB 복제 설치, 신규 DB의 운영 데이터 초기화, 하드코딩 일괄 변경, 로고·안내 문구·사업자 정보·약관 교체, 전문의약품 항목 비노출 및 해당 항목의 서버 필수 입력·검증 규칙 조정, 카테고리·필드 조정, PG 일반·간편결제와 취소·환불 재연동, 문자·알림톡 재설정, 출고 사진 업로드·구매자 사진 뷰어 및 배송 현황 조회·관리자 화면의 사진 등록 여부 필터·사진 수정·삭제 및 처리 이력, 신규 서버·DB·도메인·SSL·배포·백업. <b>권장안</b>은 여기에 관리자 모바일 촬영 편의 확장(주문번호·송장번호 검색 → 바로 촬영, 연속 촬영, 진행률·실패 사진 재전송)과 소규모 편의 기능 2건(건당 2.5 MD 이내, G1에서 확정)을 더합니다.</dd></div><div class="rv"><dt>산출물</dt><dd>소스코드 일체(귀사 Git 저장소), 변경·추가 DB 테이블 명세서, 신규 도메인·PG 결제가 연동된 상용 오픈 완료본에 더해 하드코딩 변경 목록·분리 점검표, 시험 결과, 서버 접속·배포·백업 운영 문서를 드립니다.</dd></div></dl></div></details>
+      <details class="acc rv" id="dh5s"><summary><span class="kk">5</span><h2 id="h5s">진행 방식</h2><span class="tog"><span class="t-open">펼쳐 보기</span><span class="t-close">접기</span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="acc-b"><dl class="dl"><div class="rv"><dt>단계별 확인</dt><dd>1주 분석 → 2~3주 복제·연동 → 4~5주 기능 개발 → 6주 시험·오픈 → 7주 안정화. 아래 날짜는 2026-11-09 착수 예시입니다.<ul class="sub"><li><b>G1 (11-13)</b> 범위 확정서 · 하드코딩 변경 목록 · 초기화 목록 · 분리 점검표 승인</li><li><b>3주차 말</b> 복제 몰 중간 시연</li><li><b>G2 (12-11)</b> 스테이징 전체 시연</li><li><b>G3 (12-18)</b> 통합·보안·실결제·취소 시험 결과 확인 후 <b>운영 오픈</b></li><li><b>G4 (12-24)</b> 최종 검수 · 인수</li></ul></dd></div><div class="rv"><dt>일정 관리</dt><dd>매주 금요일 화상 30분과 개발 서버 화면 시연으로 진행 상황을 공유합니다. 확인 사항은 당일 정리해 전달하고, G1 목록 밖의 요청은 공수·일정 영향을 먼저 안내한 뒤 승인받아 반영합니다.</dd></div><div class="rv"><dt>인수 기준</dt><dd>회원 승인부터 취소·환불까지 핵심 시나리오 통과, 실 MID 결제·취소 금액과 주문 상태 일치, 기존 운영 DB·파일·PG·알림 설정으로의 요청 없음, 출고 사진 표준 이미지 1MB 이하·메타정보 제거, 주문자와 허용된 관리자만 열람 가능.</dd></div><div class="rv"><dt>소통·인계</dt><dd>귀사 담당자 한 분과 당사 기획 책임이 창구를 맡고, 결정 사항은 회의록으로 남깁니다. 착수·운영 오픈 때는 원하시면 수원 영통구 귀사를 방문합니다. 소스·DB 명세서·운영 문서와 서버·도메인 계정은 모두 귀사 명의로 인계하며, 이후 유지보수 이관도 지원합니다.</dd></div><div class="rv"><dt>귀사 준비 사항</dt><dd>선정 전 소스·DB 스키마와 화면 공유 30분, 1주차 신규 도메인·서버 계정·PG 신규 가맹과 간편결제 신청·알림톡 발신 프로필·로고·약관·카테고리 구조, 5주차 실 MID 정보가 필요합니다. 필요한 항목과 시점은 착수 시 함께 정리해 드립니다.</dd></div><div class="rv"><dt>오픈 후 지원</dt><dd><b>무상 하자보수 대상 결함과 월정액 유지보수 지원</b>에는 평일 09~18시 업무시간을 기준으로 <b>긴급 장애 1시간 이내 착수 · 일반 오류 4시간 이내 착수 · 요청 사항 1영업일 안에 일정 회신</b>을 적용합니다. 월 계약 없는 건당 지원은 <b>250,000원/MD로 작업 일정·공수를 사전 협의</b>하며, 월 할당을 넘는 작업도 같은 단가로 사전 승인 후 진행합니다. 무상 하자보수는 월 유상 공수에서 차감하지 않습니다. 기존 몰의 지원도 원하시면 별도 조건으로 협의해 두 몰의 창구를 하나로 운영할 수 있습니다.</dd></div></dl></div></details>
+      <details class="acc rv" id="dh6s"><summary><span class="kk">6</span><h2 id="h6s">공고의 요청 사항에 대한 답</h2><span class="tog"><span class="t-open">펼쳐 보기</span><span class="t-close">접기</span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="acc-b"><div class="rv"><div class="tw"><table class="exp req"><thead><tr><th scope="col">공고 요청</th><th scope="col">답</th></tr></thead><tbody><tr><th scope="row">① 보안 유지 하의 빠른 분석과 1.5~2개월 내 완수 일정</th><td><b>49일 수행·40일차 운영 오픈 계획으로 추진하겠습니다.</b> 비밀유지 서약 후 비공개 저장소의 읽기 권한 또는 암호화 파일로 소스를 받고, DB는 스키마를 기본으로 받아 격리된 환경에서 두 명만 분석합니다. 운영 화면은 화상 미팅 화면 공유 30분으로 확인하고, <b>자료 열람 가능일부터 2영업일 안에 사전 분석 메모</b>를 드립니다. 메모에 일정안·전제조건·추가 확인 사항을 담고, PHP 호환성과 PG 준비 상태 등을 확인해 계약 시 실제 납기를 확정합니다</td></tr><tr><th scope="row">② PHP 쇼핑몰 복제·이관, PG 간편결제 연동, 주문·출고 관리 커스터마이징 경험</th><td><b>PHP 서비스 개발·운영</b>(쿠폰 발급·교환 시스템), <b>PG 직접 결제·취소·환불</b>(통합 빌링 시스템), <b>기존 코드 인수 후 상용 배포</b>(트래블 룰 솔루션), <b>B2B 폐쇄몰 흐름 설계·시연</b>([프로토타입] B2B 주문·견적 포털)의 경험을 결합합니다. 동일 조건의 PHP 폐쇄몰 복제·출고 사진 커스터마이징 납품 실적은 현재 자료에서 확인되지 않습니다. 관련 경험을 바탕으로 첫 주 분석과 회귀 시험·실결제·출고 사진 검증 결과를 제시하겠습니다</td></tr><tr><th scope="row">③ 적합한 기술 스택과 선택 이유</th><td><b>기존 PHP 소스·프레임워크 구조를 유지</b>하고 신규 독립 서버(Linux · PHP-FPM · MySQL/MariaDB)에 복제합니다. 검증된 흐름을 살리고 불필요한 전환 작업을 줄여 기한 안에 오픈하기 위해서입니다. 보안 지원 중인 PHP 버전과의 호환성을 선정 전에 확인합니다</td></tr><tr><th scope="row">미정 범위 (1:1 복제 중심 / 편의 기능 포함)</th><td><b>권장안 12,000,000원을 제안합니다.</b> 포장대에서 매일 반복되는 사진 등록을 주문 검색 → 연속 촬영으로 간소화하고, 소규모 편의 기능은 같은 화면을 다시 시험하지 않도록 오픈 전에 함께 넣는 편이 효율적입니다. 일정은 기본안과 같으며, <b>기본안 10,000,000원</b>으로도 필수 과업을 모두 수행합니다</td></tr></tbody></table></div></div></div></details>
+      <details class="acc rv" id="dh7s"><summary><span class="kk">7</span><h2 id="h7s">우려사항과 대응</h2><span class="tog"><span class="t-open">펼쳐 보기</span><span class="t-close">접기</span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="acc-b"><div class="rv"><div class="tw"><table class="exp req"><thead><tr><th scope="col">우려사항</th><th scope="col">대응</th></tr></thead><tbody><tr><th scope="row">실 MID·간편결제 심사, 알림톡 템플릿 검수 일정</th><td>선정 전 준비 상태를 확인하고 1주차에 미완료 항목을 요청합니다. 개발은 테스트 환경으로 먼저 진행하고, 변동 시 49일 안의 재배치를 우선 검토하며 기간 밖의 일정·공수는 서면으로 협의합니다</td></tr><tr><th scope="row">기존 소스의 PHP 버전·라이브러리 호환성</th><td>선정 전 보안 지원 중인 PHP 버전에서 기존 소스가 실행되는지와 필요한 수정량을 확인하고, 큰 변경이 필요하면 계약 전에 범위·일정·비용과 대안을 협의합니다</td></tr><tr><th scope="row">기존 소스·유료 모듈의 신규 몰 사용 조건</th><td>복제·수정 권한과 도메인별 사용 조건을 계약 전에 확인하고, 신규 라이선스가 필요하면 비용과 일정을 사전에 안내합니다</td></tr></tbody></table></div></div></div></details>
+      <details class="acc rv" id="dh8s"><summary><span class="kk">8</span><h2 id="h8s">정리<small class="sub">한눈에 보는 주요 제안 조건</small></h2><span class="tog"><span class="t-open">펼쳐 보기</span><span class="t-close">접기</span><svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span></summary><div class="acc-b"><div class="sumtw"><table class="sumt"><thead><tr><th scope="col">항목</th><th scope="col">내용 (부가세 별도)</th></tr></thead><tbody><tr class="key"><th scope="row"><span class="sn">01</span><b>금액</b></th><td><b>권장안 12,000,000원</b> (부가세 포함 13,200,000원) — 필수 과업 전체 + 관리자 모바일 촬영 편의 확장 + 소규모 편의 기능 2건 · <b>기본안 10,000,000원</b> — 필수 과업 전체(원본 복제 + 출고 사진). 두 안 모두 공고 예산 800만~1,250만 원 안</td></tr><tr class="key"><th scope="row"><span class="sn">02</span><b>기간</b></th><td><b>착수일부터 49일 · 운영 오픈 40일차</b> · 예시: 2026-11-09 착수 → <b>12-18 운영 오픈</b> → 12-24 최종 검수 → 12-27 수행 기간 종료. 실제 착수일·오픈 기한·최종 검수일은 계약 시 날짜로 확정</td></tr><tr><th scope="row"><span class="sn">03</span><b>투입</b></th><td><b>권장안 48 MD (1.60 MM) · 6명</b> — PM 1 · 기획 1 · 디자인 1 · 프론트엔드 1 · 백엔드 2. <b>전원 보유 인력 · 재하도급 없음</b></td></tr><tr><th scope="row"><span class="sn">04</span><b>선정 전 분석</b></th><td>비밀유지 서약 후 소스를 받아, <b>자료 열람 가능일부터 2영업일 안에 사전 분석 메모</b> 제출. 미선정 시 사본 삭제 후 확인서 제출</td></tr><tr><th scope="row"><span class="sn">05</span><b>대금 지급</b></th><td>착수 30% (3,600,000원) · 최종 검수 후 70% (8,400,000원) — 권장안 기준</td></tr><tr><th scope="row"><span class="sn">06</span><b>기술</b></th><td><b>기존 PHP 소스·프레임워크 구조 유지</b> + 신규 독립 서버(Linux · PHP-FPM · MySQL/MariaDB). 보안 지원 중인 PHP 버전과의 호환성은 선정 전 확인</td></tr><tr><th scope="row"><span class="sn">07</span><b>제외 범위</b></th><td>제품 데이터 등록(오픈 후 귀사 직접 등록), 기존 몰의 기능 변경·데이터 이관, 범위 확정서에 없는 신규 기능</td></tr><tr><th scope="row"><span class="sn">08</span><b>추가 비용 조건</b></th><td>범위 변경은 <b>250,000원/MD</b>로 산정해 사전 승인 후 진행. 서버·DB·도메인·SSL(유료 인증서 사용 시)·문자·알림톡 발송 요금·PG 수수료는 귀사 명의 실비. 유료 솔루션·모듈의 신규 몰 라이선스가 필요하면 계약 전 안내 후 승인받아 반영</td></tr><tr><th scope="row"><span class="sn">09</span><b>하자보수</b></th><td><b>최종 검수일부터 3개월 무상</b> — 대상 결함은 월 유지보수 계약 여부와 관계없이 §5의 대응 시간 적용</td></tr><tr><th scope="row"><span class="sn">10</span><b>월 유지보수 (선택)</b></th><td>기본 월 500,000원 (2 MD) · 확장 월 1,000,000원 (4 MD) · 신규 몰 1개 기준. 대응 시간과 건당 지원 조건은 §5에 명시</td></tr><tr><th scope="row"><span class="sn">11</span><b>견적 유효기간</b></th><td>제출일부터 30일 · 사전 분석 메모로 확인한 내용을 G1 범위 확정서에 반영</td></tr></tbody></table></div></div></details>
+    </div>
+  </section>
+
+  <section class="close">
+    <div class="wrap">
+      <p class="thanks rv">검토해 주셔서 감사합니다.</p><p class="thanks-sub rv">귀사의 기존 몰이 쌓아 온 신뢰를 새 제품군에서도 이어 갈 수 있도록, 약속한 일정에 맞춘 오픈과 이후 안정적인 운영까지 책임감 있게 함께하겠습니다.</p>
+      <button type="button" class="pbtn ghost rv" data-demo aria-haspopup="dialog" aria-controls="demoDlg">사전 분석 안내 <svg class="s" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-in">
+    <span>기존 PHP 기반 B2B 폐쇄몰 복제 구축 및 추가 기능 개발</span>
+    <span>위시켓 159251 · 2026-10-26</span>
+  </div>
+</footer>
+
+<button type="button" class="float-cta" id="floatCta" data-demo aria-haspopup="dialog" aria-controls="demoDlg" aria-hidden="true" tabindex="-1">사전 분석 안내 <svg class="s" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+
+<dialog class="demo-dlg" id="demoDlg" aria-labelledby="demoMsg" aria-describedby="demoDesc">
+  <div class="dbar" aria-hidden="true"></div>
+  <div class="din">
+    <span class="dico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></span>
+    <h2 id="demoMsg">선정 전 소스 분석 안내</h2>
+    <p class="desc" id="demoDesc">비밀유지 서약 후 비공개 저장소 또는 암호화 파일로 소스·DB 스키마를 받아, 격리된 환경에서 두 명만 분석합니다. 자료 열람 가능일부터 2영업일 안에 일정안·전제조건을 담은 사전 분석 메모를 드립니다. 미선정 시 사본을 삭제하고 확인서를 제출합니다.</p>
+    <button type="button" class="dok" id="demoOk">확인</button>
+  </div>
+</dialog>
+<script src="assets/main.js"></script>
+</body>
+</html>

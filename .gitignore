@@ -1,0 +1,32 @@
+# ── 대외 공개 금지 — 내부 산출물 ────────────────────────────
+# 제안서 원본·요약본·요청서 (제안 금액 산정 근거·단가·인력 참여율 포함)
+# macOS 의 한글 파일명(NFD)과 패턴(NFC)이 어긋날 수 있어 「루트 .md 전부 제외 + README 만 허용」으로 둔다.
+/*.md
+!/README.md
+/제안서.md
+/요약본.md
+/요청서.md
+
+# 검증·빌드 스크립트
+/verify*.py
+/t_*.js
+/build.py
+
+# 원본 문서 · 대외비 자료
+*.docx
+*.pptx
+*.xlsx
+*.pdf
+design/
+
+# 운영체제 · 편집기
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+desktop.ini
+*.swp
+.idea/
+.vscode/
+node_modules/
